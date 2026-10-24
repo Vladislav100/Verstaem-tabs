@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Табы</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+    <section class="tabs">
+        <h1 class="title">Living Materials</h1>
+        <ul class="tabs-list">
+            <li class="tabs-list-item"><button data-tab="architecture" class="tabs-btn active">Архитектура</button></li>
+            <li class="tabs-list-item"><button data-tab="interiors" class="tabs-btn">Интерьеры</button></li>
+            <li class="tabs-list-item"><button data-tab="trips" class="tabs-btn">Путешествия</button></li>
+            <li class="tabs-list-item"><button data-tab="interview" class="tabs-btn">Интервью</button></li>
+            <li class="tabs-list-item"><button data-tab="photo" class="tabs-btn">Фотографии</button></li>
+        </ul>
+        <div class="container">
+            <article id="architecture" class="card active">
+                <img class="card-img" src="./img/architecture.jpg" width="674" height="360" alt="Тёплые интерьеры
+">
+                <div class="card-descr">
+                    <h2 class="card-title">Архитектура света
+                    </h2>
+                    <p class="card-text">Современные здания и работа с естественным освещением.</p>
+                    <ul class="card-list">
+                        <li class="card-list-item">48 страниц</li>
+                        <li class="card-list-item">12 проектов</li>
+                        <li class="card-list-item">94%</li>
+                    </ul>
+                    <button class="card-btn">Читать материал</button>
+                </div>
+            </article>
+            <article id="interiors" class="card">
+                <img class="card-img" src="./img/interiors.jpg" width="674" height="360" alt="Тёплые интерьеры
+">
+                <div class="card-descr">
+                    <h2 class="card-title">Тёплые интерьеры
+                    </h2>
+                    <p class="card-text">Домашние пространства в природной палитре.</p>
+                    <ul class="card-list">
+                        <li class="card-list-item">16 домов</li>
+                        <li class="card-list-item">8 дизайнеров</li>
+                        <li class="card-list-item">4 страны</li>
+                    </ul>
+                    <button class="card-btn">Открыть подборку</button>
+                </div>
+            </article>
+            <article id="trips" class="card">
+                <img class="card-img" src="./img/trips.jpg" width="674" height="360" alt="Тёплые интерьеры
+">
+                <div class="card-descr">
+                    <h2 class="card-title">Маршруты Европы
+                    </h2>
+                    <p class="card-text">Живописные места и небольшие города.
+                    </p>
+                    <ul class="card-list">
+                        <li class="card-list-item">27 мест</li>
+                        <li class="card-list-item">9 городов</li>
+                        <li class="card-list-item">6 стран</li>
+                    </ul>
+                    <button class="card-btn">Смотреть маршрут</button>
+                </div>
+            </article>
+            <article id="interview" class="card">
+                <img class="card-img" src="./img/interview.jpg" width="674" height="360" alt="Тёплые интерьеры
+">
+                <div class="card-descr">
+                    <h2 class="card-title">Разговоры с авторами
+                    </h2>
+                    <p class="card-text">Большие интервью с архитекторами и фотографами.</p>
+                    <ul class="card-list">
+                        <li class="card-list-item">11 гостей</li>
+                        <li class="card-list-item">6 часов</li>
+                        <li class="card-list-item">100+ фото</li>
+                    </ul>
+                    <button class="card-btn">Читать интервью</button>
+                </div>
+            </article>
+            <article id="photo" class="card">
+                <img class="card-img" src="./img/photos.jpg" width="674" height="360" alt="Тёплые интерьеры
+">
+                <div class="card-descr">
+                    <h2 class="card-title">Фотоистории
+                    </h2>
+                    <p class="card-text">Подборка атмосферных редакционных серий.
+                    </p>
+                    <ul class="card-list">
+                        <li class="card-list-item">320 фото</li>
+                        <li class="card-list-item">18 серий</li>
+                        <li class="card-list-item">5 выпусков</li>
+                    </ul>
+                    <button type="button" class="card-btn">Открыть галерею</button>
+                </div>
+            </article>
+        </div>
+    </section>
+</body>
+
+</html>

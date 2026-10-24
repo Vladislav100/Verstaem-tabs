@@ -1,0 +1,134 @@
+@font-face {
+    font-family: "Inter";
+    src: local("Inter-Regular"), url(../fonts/InterRegular.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PTSerif";
+    src: local("PTSerif-Bold"), url(../fonts/PTSerifBold.woff2) format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+body {
+    font-family: 'Inter';
+    display: grid;
+    place-items: center;
+    height: 100dvh;
+    background-color: #ECE3D5;
+}
+
+.tabs {
+    padding: 40px;
+    max-width: 1200px;
+    width: 100%;
+    border: 1px solid #D8C8B0;
+    background-color: #F8F2E8;
+}
+
+.title {
+    margin-bottom: 24px;
+    font-family: 'PTSerif';
+    font-size: 52px;
+    color: #2F2922;
+}
+
+.tabs-list {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.tabs-btn {
+    padding: 12px 24px;
+    border-radius: 100px;
+    border: 1px solid #D8C8B0;
+    background-color: #EFE5D6;
+    font-size: 16px;
+    line-height: 120%;
+
+    &.active {
+        color: white;
+        background-color: #3D3127;
+        border-color: #3D3127;
+    }
+}
+
+.container {
+    position: relative;
+    min-height: 360px;
+}
+
+.card {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    gap: 28px;
+    width: 100%;
+    transition: opacity 0.4s ease-in-out, transform 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(15px);
+
+    &.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card-descr {
+    padding: 24px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #D8C8B0;
+    background-color: #EFE5D6;
+}
+
+.card-title {
+    margin-bottom: 16px;
+    font-family: 'PTSerif';
+    font-size: 36px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #2F2922;
+}
+
+.card-text {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #2F2922;
+}
+
+.card-list {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.card-list-item {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #D8C8B0;
+}
+
+.card-btn {
+    padding: 12px;
+    max-width: 178px;
+    width: 100%;
+    border: none;
+    border-radius: 100px;
+    color: white;
+    background-color: #3D3127;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0%;
+}
